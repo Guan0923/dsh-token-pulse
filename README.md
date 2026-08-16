@@ -15,6 +15,18 @@ Token 用量统计插件（动态 Cordis 插件版）——记录 DeepSeek Harne
 | --- | --- |
 | `host.js` | Host 半部分：拦截 `llm/stream` 瀑布记录 usage，防抖写入数据文件，提供 `get-stats` / `set-workspace-root` RPC |
 | `client.js` | Client 半部分：设置面板「Token 用量」页面（React，无 JSX） |
+| `index.js` | npm 入口：以字符串导出 `host` / `client` 两个半部分源码 |
+
+## npm 安装（可选）
+
+```sh
+npm install dsh-token-pulse
+```
+
+```js
+import { host, client } from 'dsh-token-pulse'
+// 将 host / client 作为 cordis_define 的 code.host / code.client 动态安装
+```
 
 ## 安装方式（动态安装，不改任何源码）
 

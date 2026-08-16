@@ -1,0 +1,42 @@
+{
+  "name": "dsh-token-pulse",
+  "version": "0.1.0",
+  "description": "Token usage statistics plugin for DeepSeek Harness: GitHub-style heatmap (with year switch), 24h/7d smooth curves with legend filtering, and totals in the settings panel. Distributed as dynamic Cordis plugin source.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "host.js",
+    "client.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "Guan0923 <gwy010923@gs.zzu.edu.cn>",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "token",
+    "usage",
+    "statistics",
+    "plugin",
+    "cordis",
+    "heatmap",
+    "chart"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guan0923/dsh-token-pulse.git"
+  },
+  "homepage": "https://github.com/Guan0923/dsh-token-pulse#readme",
+  "bugs": {
+    "url": "https://github.com/Guan0923/dsh-token-pulse/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
